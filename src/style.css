@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #7D499B;
+}
+
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 6vw;
+        margin-bottom: 16px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 10vh;
+        margin-bottom: 16px;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #minInput, #maxInput {
+        font-size: 2.5vw;
+        margin-bottom: 8px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #minInput, #maxInput {
+        font-size: 5vh;
+        margin-bottom: 8px;
+        padding: 4px;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    #result {
+        font-size: 2.5vw;
+        margin-bottom: 8px;
+        padding: 4px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #result {
+        font-size: 5vh;
+        margin-bottom: 8px;
+        padding: 4px;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #generateButton {
+        font-size: 2.5vw;
+        padding: 8px 16px;
+    }
+
+@media screen and (max-width: 768px) {
+    #generateButton {
+        font-size: 5vh;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        padding: 10px;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        padding: 10px;
+        font-size: 5vh;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .language1{
+        text-decoration: none;
+        color: white;
+    }
+}
+@media screen and (max-width: 768px) {
+    .language1{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .language2{
+        text-decoration: none;
+        color: #39C5BB;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .language2{
+        text-decoration: none;
+        color: #39C5BB;
+    }
+}

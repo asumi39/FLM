@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>乱数発生器</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="icon" type="image/png" href="../src/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/icon.png">
+</head>
+<body>
+    <h1>乱数発生器</h1>
+    <input type="number" id="minInput" placeholder="最小値">
+    <br>
+    <input type="number" id="maxInput" placeholder="最大値">
+    <br>
+    <button id="generateButton" onclick="generateRandomNumber()">乱数を生成する</button>
+    <br>
+    <p id="result"></p>
+    <div class="footer">
+        <a class="language2" href="../zh-TW/">正體中文</a>
+        <a class="language2" href="../zh-CN/">简体中文</a>
+        <a class="language2" href="../en/">English</a>
+        <a class="language1" href="#">日本語</a>
+        <a class="language2" href="../vi/">Tiếng Việt</a>
+    </div>
+
+    <script>
+        function generateRandomNumber() {
+            var minInput = document.getElementById("minInput").value;
+            var maxInput = document.getElementById("maxInput").value;
+            var resultElement = document.getElementById("result");
+
+            if (minInput.trim() === "" || maxInput.trim() === "") {
+                resultElement.textContent = "有効な範囲の数値を入力してください。";
+                return;
+            }
+
+            var minValue = parseInt(minInput);
+            var maxValue = parseInt(maxInput);
+
+            if (isNaN(minValue) || isNaN(maxValue)) {
+                resultElement.textContent = "有効な範囲の数値を入力してください。";
+                return;
+            }
+
+            if (minValue > maxValue) {
+                resultElement.textContent = "正しい範囲を入力してください。最小値は最大値以下である必要があります。";
+                return;
+            }
+
+            var randomNumber = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+            resultElement.textContent = "乱数: " + randomNumber;
+        }
+    </script>
+</body>
+</html>
+

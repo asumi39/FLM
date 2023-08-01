@@ -1,0 +1,17 @@
+<script>
+  var userLang = navigator.language || navigator.userLanguage;
+
+  if (userLang.startsWith('en')) {
+    window.location.replace('./en/');
+  } else if (userLang.startsWith('zh-TW')) {
+    window.location.replace('./zh-TW/');
+  } else if (userLang.startsWith('zh-CN')) {
+    window.location.replace('./zh-CN/');
+  } else if (userLang.startsWith('ja')) {
+    window.location.replace('./ja/');
+  } else if (userLang.startsWith('vi')) {
+    window.location.replace('./vi/');
+  } else {
+    window.location.replace('./en/');
+  }
+</script>

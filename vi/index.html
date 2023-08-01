@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>trình tạo số ngẫu nhiên</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="icon" type="image/png" href="../src/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/icon.png">
+</head>
+<body>
+    <h1>trình tạo số ngẫu nhiên</h1>
+    <input type="number" id="minInput" placeholder="giá trị tối thiểu">
+    <br>
+    <input type="number" id="maxInput" placeholder="gia trị lơn nhât">
+    <br>
+    <button id="generateButton" onclick="generateRandomNumber()">Tạo số ngẫu nhiên</button>
+    <br>
+    <p id="result"></p>
+    <div class="footer">
+        <a class="language2" href="../zh-TW/">正體中文</a>
+        <a class="language2" href="../zh-CN/">简体中文</a>
+        <a class="language2" href="../en/">English</a>
+        <a class="language2" href="../ja/">日本語</a>
+        <a class="language1" href="#">Tiếng Việt</a>
+    </div>
+
+    <script>
+        function generateRandomNumber() {
+            var minInput = document.getElementById("minInput").value;
+            var maxInput = document.getElementById("maxInput").value;
+            var resultElement = document.getElementById("result");
+
+            if (minInput.trim() === "" || maxInput.trim() === "") {
+                resultElement.textContent = "Vui lòng nhập một dãy số hợp lệ.";
+                return;
+            }
+
+            var minValue = parseInt(minInput);
+            var maxValue = parseInt(maxInput);
+
+            if (isNaN(minValue) || isNaN(maxValue)) {
+                resultElement.textContent = "Vui lòng nhập một dãy số hợp lệ.";
+                return;
+            }
+
+            if (minValue > maxValue) {
+                resultElement.textContent = "Vui lòng nhập phạm vi chính xác, giá trị tối thiểu phải nhỏ hơn hoặc bằng giá trị tối đa.";
+                return;
+            }
+
+            var randomNumber = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+            resultElement.textContent = "số ngẫu nhiên: " + randomNumber;
+        }
+    </script>
+</body>
+</html>
+
