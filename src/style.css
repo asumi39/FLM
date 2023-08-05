@@ -36,6 +36,10 @@ h1 {
   font-size: 2vh;
 }
 
+.body {
+  padding: 200px 0;
+}
+
 .language-selector {
   position:absolute;
   -webkit-user-select:none;

@@ -8,14 +8,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../src/icon.png">
 </head>
 <body>
-    <h1>trình tạo số ngẫu nhiên</h1>
-    <input type="number" id="minInput" placeholder="giá trị tối thiểu">
-    <br>
-    <input type="number" id="maxInput" placeholder="gia trị lơn nhât">
-    <br>
-    <button id="generateButton" onclick="generateRandomNumber()">Tạo số ngẫu nhiên</button>
-    <br>
-    <p id="result"></p>
     <div class="language-seletor">
       <li><a class="language2" href="../zh-TW/">正體中文</a></li>
       <li><a class="language2" href="../zh-CN/">简体中文</a></li>
@@ -23,7 +15,16 @@
       <li><a class="language2" href="../ja/">日本語</a></li>
       <li><a class="language1" href="../vi/">Tiếng Việt</a></li>
     </div>
-
+    <div class="body">
+      <h1>trình tạo số ngẫu nhiên</h1>
+      <input type="number" id="minInput" placeholder="giá trị tối thiểu">
+      <br>
+      <input type="number" id="maxInput" placeholder="gia trị lơn nhât">
+      <br>
+      <button id="generateButton" onclick="generateRandomNumber()">Tạo số ngẫu nhiên</button>
+      <br>
+      <p id="result"></p>
+    </div>
     <script>
         function generateRandomNumber() {
             var minInput = document.getElementById("minInput").value;
