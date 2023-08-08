@@ -36,8 +36,22 @@ h1 {
   font-size: 15px;
 }
 
+.img {
+  text-align: center;
+  padding: 5vw 0;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.head {
+  padding: 0 20vw;
+}
+
 .body {
-  padding: 200px 0;
+  padding: 0 20vw;
 }
 
 .language-selector {
