@@ -5,26 +5,26 @@ body {
 }
 
 h1 {
-  font-size: 5vh;
+  font-size: 30px;
   margin-bottom: 16px;
   color: white;
 }
 
 #minInput, #maxInput {
-  font-size: 2vh;
+  font-size: 15px;
   margin-bottom: 8px;
   padding: 4px;
 }
 
 #result {
-  font-size: 2vh;
+  font-size: 15px;
   margin-bottom: 8px;
   padding: 4px;
   color: white;
 }
 
 #generateButton {
-  font-size: 2vh;
+  font-size: 15px;
   padding: 8px 16px;
 }
 
@@ -33,7 +33,7 @@ h1 {
   bottom: 10px;
   text-align: center;
   padding: 10px;
-  font-size: 2vh;
+  font-size: 15px;
 }
 
 .body {
@@ -57,11 +57,11 @@ h1 {
 .language1{
   text-decoration: line-through;
   color: white;
-  font-size: 2vh;
+  font-size: 17px;
 }
 
 .language2{
   text-decoration: none;
   color: white;
-  font-size:2vh;
+  font-size: 17px;
 }
